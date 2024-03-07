@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Flex Example</title>
+        <meta charset="UTF-8">
+        <style>
+            nav {display: flex;} /*this makes the divs go side by side*/
+            nav div {flex: 1;}
+            /*selecting all divs inside nav tag, flex 1 says how many pieces of pie each div gets*/
+        </style>
+    </head>
+    <body>
+        <h1>Quick Flexbox</h1>
+        <p>Flexboxes have 1 row and n columns. The row is a container tag. The columns are container tags too. </p>
+         
+        <nav> <!--nav is our flexbox row-->
+            <div>About</div> <!--div is the first column in this flexbox-->
+            <div>Products</div>
+            <div>Contact</div>
+        </nav>
+    </body>
+</html>

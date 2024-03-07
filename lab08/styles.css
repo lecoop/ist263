@@ -1,0 +1,19 @@
+body {font-family: Verdana, Geneva, Tahoma, sans-serif;
+background-color: #ededed;}
+h1, h2 {color: #1A837C}
+p {color: #000;}
+a {color: #34CBBC}
+nav {background-color: #003B3B;
+padding: 10px;
+margin-bottom: 30px}
+nav a {color: #CCAE35}
+nav a:hover {background-color: #79ECE0;}
+.qoute {float: right;}
+
+.header {padding: 20px; background-color: #defaf7; border-radius: 1em;}
+.address {display: flex; margin: 20px; column-gap: 30px;}
+
+
+.form {display: flex; margin: 20px;}
+.form div {flex: 1;}
+.form {padding: 20px; background-color: #defaf7; border-radius: 1em;}
