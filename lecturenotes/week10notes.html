@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--sets it up so mobile is full size display-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unit 10 Notes Responsive Design</title>
+        <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            .row1 { 
+                padding: 80px;
+                margin-top: 40px;}
+            .row1 div {
+                padding: 40px;
+            }
+            .banner {width: 100%;}
+            .bannersmall {width: 100%}
+            .row1 {display: flex;
+            flex-wrap: wrap;} /*wraps columns when they are too big for the viewport*/
+            .box1, .box2, .box3 {flex: 1;}
+
+            @media only screen and (max-width: 800px) {
+                body {background-color: orange;}
+                .banner {display: none;}} /*don't display large image on mobile*/
+            @media only screen and (min-width: 801px)
+            {.bannersmall {display:none;} /*don't display small image on desktop*/
+        }
+        </style>
+    </head>
+    <body>
+
+        <h1>Flexbox</h1>
+
+        <!-- large width banner image -->
+        <img src="https://laferger.github.io/ist263/images/forever_orange.jpg" alt="large campus banner" class="banner">
+
+        <!-- smaller width banner image -->
+        <img src="https://laferger.github.io/ist263/images/forever_orange_small.jpg" alt="small campus banner" class="bannersmall">
+        
+        <p> Difference between max-width and width: max-width imafes will never size to larger
+             than their pixels.</p>
+
+        <!-- this row is coming from https://www.syracuse.edu/about/ -->
+        <div class="row1">
+            <div class="box1">
+                <img src="https://laferger.github.io/ist263/images/eighty-percent-numeral-800x533.png" alt="80 percent"><br>
+                <p>80% of Syracuse University students received some form of financial support totaling more than $414 million (2019-2020 data)</p>
+            </div>
+            <div class="box2">
+                <img src="https://laferger.github.io/ist263/images/eighty-seven-percent-800x533.png" alt="80 percent">
+                <p>87% placement outcome (Graduates in full-and part-time positions, military service, volunteer or service programs, and graduate school.)</p>
+            </div>
+            <div class="box3">
+                <img src="https://laferger.github.io/ist263/images/ninety-percent-800x533.png" alt="80 percent">
+                <p>Positions related to Career Goals</p>
+            </div>
+        </div>
+
+    </body>
+</html>
