@@ -30,7 +30,8 @@ footer nav a {
     margin: 10px; 
 }
 
-.rowlist, .rowlist2 {display: flex;}
+.rowlist, .rowlist2 {display: flex;
+margin: 20px;}
 
 @media only screen and (max-width: 800px) {
     .rowlist, .rowlist2{flex-direction: column;}}
