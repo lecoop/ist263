@@ -1,6 +1,7 @@
 .header {display: flex;
         justify-content: space-between;
         align-items: center;}
+
 .intro {display: flex;
 margin: 20px;}
 .intro p, .intro h1 {flex: 1;
