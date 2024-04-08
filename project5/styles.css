@@ -1,8 +1,13 @@
-.intro {display: flex;}
-        .intro {flex: 60% 40%}
-        .header {display: flex;
+.header {display: flex;
         justify-content: space-between;
         align-items: center;}
+.intro {display: flex;
+margin: 20px;}
+.intro p, .intro h1 {flex: 1;
+    margin: 50px;}
+        
+        .intro img {margin: 50px;
+            flex: 2; }
 
 .pictags {display: flex;
         flex: 1;
