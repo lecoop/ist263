@@ -6,8 +6,10 @@ margin: 20px;}
 .intro p, .intro h1 {flex: 1;
     margin: 50px;}
         
-        .intro img {margin: 50px;
-            flex: 2; }
+.intro img {margin: 50px; flex: 2; }
+
+@media only screen and (max-width: 800px) {
+    .intro{flex-direction: column;}}
 
 .pictags {display: flex;
         flex: 1;
@@ -15,6 +17,7 @@ margin: 20px;}
 
 @media only screen and (max-width: 800px) {
     .pictags{flex-direction: column;}}
+
 
 footer {
     padding: 20px 0;
