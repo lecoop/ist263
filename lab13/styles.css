@@ -8,7 +8,7 @@ nav {background-color: #003B3B;
 padding: 10px;
 margin-bottom: 30px}
 nav a {color: #CCAE35}
-nav a:hover {background-color: #79ECE0;}
+nav a:hover {background-color: black;}
 .qoute {float: right;}
 
 .header {padding: 20px; background-color: #defaf7; border-radius: 1em;}
