@@ -22,8 +22,8 @@ nav a:hover {background-color: black;}
 h1 {display: flex; justify-content: center; padding: 20px}
 .skills {display: flex; padding: 20px}
 
-aside {background-color: grey; border-radius: 30px; padding: 10px;}
-aside p {color: white;}
+aside {background-color: lightyellow; border-radius: 30px; padding: 10px;}
+aside p {color: black;}
 
 .flexbox2 {display: flex; padding: 20px; align-items: center;}
 .one {flex: 3; padding: 10px;}
