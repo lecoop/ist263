@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 12 Notes</title>
+    <script>
+        function rightAnswer () {
+            document.getElementById("right").innerHTML = "<span style='color: green;'>False is correct!</span>";
+        }
+
+        function wrongAnswer () {
+            document.getElementById("wrong").innerHTML = "<span style='color: red;'>True is incorrect :(</span>";
+        }
+    </script>
+</head>
+<body>
+
+    <h1>HTML Quiz</h1>
+    <p>Changing HTML inside a tage with JavaScript.</p>
+
+    <p>Java and JavaScript are the same thing.</p>
+    <p id="wrong" onclick="wrongAnswer();">True</p>
+    <p id="right" onclick="rightAnswer();">False</p>
+    
+</body>
+</html>

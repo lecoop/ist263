@@ -1,25 +1,31 @@
-.header {display: flex;
-        justify-content: space-between;
-        align-items: center;}
+/* Main styles*/
 
-.intro {display: flex;
-margin: 20px;}
-.intro p, .intro h1 {flex: 1;
-    margin: 50px;}
-        
-.intro img {margin: 50px; flex: 2; }
+body {font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #fafafc;}
+h1 {color: #0c1663}
+p {color: #0c1663}
+h2 {color: #0c1663}
 
+footer {background-color: #bdfc90;}
+/*Making the page responsive for mobile*/
 @media only screen and (max-width: 800px) {
     .intro{flex-direction: column;}}
-
-.pictags {display: flex;
-        flex: 1;
-    justify-content: space-evenly;}
 
 @media only screen and (max-width: 800px) {
     .pictags{flex-direction: column;}}
 
+@media only screen and (max-width: 800px) {
+    .rowlist, .rowlist2{flex-direction: column;}}
+    
+/*header*/
 
+.header {display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+padding: 20px}
+
+/*footer*/
 footer {
     padding: 20px 0;
     text-align: center; 
@@ -34,8 +40,19 @@ footer nav a {
     margin: 10px; 
 }
 
+.intro {display: flex;
+margin: 20px;}
+.intro p, .intro h1 {flex: 1;
+    margin: 50px;}
+        
+.intro img {margin: 50px; flex: 2; }
+
+.pictags {display: flex;
+        flex: 1;
+    justify-content: space-evenly;}
+    
+
 .rowlist, .rowlist2 {display: flex;
 margin: 20px;}
 
-@media only screen and (max-width: 800px) {
-    .rowlist, .rowlist2{flex-direction: column;}}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A11y</title>
+    <style>
+        /* dont forget the code in the html*/
+        .skip {background-color: blueviolet;
+        color:yellow;
+        padding: 8px;
+        text-decoration: none;
+        border: 2px solid black;
+        position: absolute;
+        top: 10px;
+        left: -999px; /*pus off ledt side of browser*/
+        }
+        .skip:focus {
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- tab order is for complex websites with a lot of stuff
+    Skip to content is required for projext-->
+<nav>
+    <a href="#skip" class="skip">Skip to Content</a>
+    <a href="http://www.google.com" tabindex="3">Google</a><br>
+    <a href="http://www.amazon.com" tabindex="2">Amazon</a><br>
+    <a href="https://www.cuse.com/" tabindex="1">Syracuse University</a><br>
+</nav>
+<h1>Ally HTML & CSS</h1>
+<p id="skip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, error! Nesciunt quos esse natus ut laboriosam! Est expedita mollitia odio recusandae veniam cumque? Impedit recusandae consequuntur labore, voluptas alias amet!</p>
+
+</body>
+</html>
