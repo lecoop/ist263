@@ -25,6 +25,8 @@ footer {background-color: #bdfc90;}
     margin: 20px;
 padding: 20px}
 
+.header nav a { margin: 20px}
+
 /*footer*/
 footer {
     padding: 20px 0;
@@ -55,4 +57,7 @@ margin: 20px;}
 .rowlist, .rowlist2 {display: flex;
 margin: 20px;}
 
+.projects{
+    display: flex;
+}
 

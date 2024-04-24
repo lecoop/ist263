@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        .container {width: 800px; margin: 0 auto;}
+        .button {
+            background-color: lightblue;
+            cursor: pointer;
+            padding: 5px;}
+
+        #modal {
+            background-color: lightsalmon;
+            color: darkslategray;
+            border: 2px solid white;
+            padding: 10px;
+            width: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -100px;
+            display: none;
+        }
+
+        #close {
+            text-align: right;
+            cursor: pointer;
+        }
+        /* write CSS to position our subscribe form and hide it when the page loads here */
+    </style>
+    <script>
+        function openModal () {
+            document.getElementById("modal").style.display = "block"
+        }
+        function closeModal () {
+            document.getElementById("modal").style.display = "none"
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://laferger.github.io/ist263/images/cupcakes.jpg">
+        <h1>Desserts</h1>
+        <p>Tootsie roll icing dessert oat cake lollipop jelly apple pie muffin. Jelly jelly-o bear claw topping muffin pudding oat cake. Carrot cake candy pie jujubes muffin tootsie roll. Brownie topping apple pie cupcake danish chocolate cotton candy gingerbread.</p>
+        
+        <p>Biscuit oat cake soufflé icing gingerbread cotton candy shortbread cupcake gummi bears. Chocolate cake lollipop biscuit lemon drops jelly tiramisu pie oat cake liquorice. Carrot cake cake cupcake cupcake lollipop sweet roll.</p>
+        
+        <p>Chocolate cake wafer cupcake candy canes carrot cake. Lollipop tart tootsie roll tart jelly-o candy canes candy. Halvah candy jelly-o jujubes toffee.</p>
+        
+        <p>Muffin pastry cupcake cheesecake icing lollipop. Jelly beans tootsie roll tootsie roll toffee gummi bears chocolate bar. Tart cake donut fruitcake oat cake sesame snaps jelly cookie icing. Jelly liquorice pudding biscuit cookie sweet roll tootsie roll dessert lollipop.</p>
+
+        <p><a class="button" onclick="openModal();">Subscribe to Our Newsletter</a></p>
+
+        <!-- make a subscribe form here -->
+
+        <div id="modal">
+            <p id="close" onclick="closeModal();">X</p>
+            <form>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email"><br>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
