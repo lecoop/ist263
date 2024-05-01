@@ -6,14 +6,20 @@
     <title>Projects</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="../project/media/favicon.ico">
+    <script type="text/javascript" src="script.js"></script>
+
 </head>
 <body>
     <header>
         <div class="header">
             <div class="logo">
-                <img src="../project/media/logo_re.png">
+                <img src="../project/media/logo_re.png" alt="Green L and C">
             </div>
-            <div class="nav">
+            <div class="row">
+                <img id="hamicon" onclick="showNav();" src="../project/media/noun-hamburger-nav-683457.png" alt="hamburger icon">
+                <h2 onclick="hideNav();" id="close">X</h2>
+            </div>
+            <div id="navlinks">
                 <nav>
                     <a href="index_home.html">Home</a>
                     <a href="resume.html">Resume</a>
@@ -24,40 +30,52 @@
         </div>
     </header>
 <h1>Dive deeper into some projects I've worked on</h1>
-<div class="projects">
-    <div>
-    <div><h2>Research Consultant for the Prevention Network of CNY:</h2>
+
+    <div class="projects">
+    <div class="project"><h2>Research Consultant for the Prevention Network of CNY:</h2>
         <p>Overview: I worked as a research consultant to analyze data regarding substance abuse in Lewis County, NY. I created a 30-page report and presented it to the data analysis team at the Prevention Network. My most interesting finding was that youth in Lewis County, NY were more susceptible to drug abuse than alcohol abuse in 2021.</p>
         <object class="pdf" 
-                    data=
-        "../project/media/3GNY Final Report.pdf"
-                    width="800"
-                    height="500" alt="PDF of Report for the Prevention Network of CNY">
+                    data="../project/media/Coop_Final_Report.pdf"
+        width="300"
+        height="400" alt="PDF of Report for the Prevention Network of CNY">
         </object></div>
-    <div><h2>IST407 Final Project – NYC Car Crash Data Analysis</h2>
+        <div class="project">
+            <h2>SAAC Co-President - Chair Report Writing & Organization</h2>
+            <p>As the elected Co-Pres of the Syracuse Student Athlete Advisory Committee, I initiated an overhaul of how our leadership positions were passed on to new members. For the 2024-25 year, I created a template for each current member in a leadership position to fill out detailing the requirements of their job. I then required each member to meet with the member taking over their role, pass on the document and help the new leader set goals for the upcoming year. These documents will then be updated each year as the position evolves and contains useful informtion so that new leaders will have success.</p>
+            <object class="pdf" 
+                    data=
+        "../project/media/SAAC Leadership Position Report Template (rename this based on position).pdf"
+                    width="300"
+                    height="400" alt="PDF of Report for SAAC Leadership Positions"></object>
+        </div>
+        <div class="project"><h2>IST359 Final – Syracuse Women’s Rowing Database</h2>
+            <p>I designed a database for the Syracuse University Women’s rowing team to properly store athlete’s data and access information more efficiently.</p>
+            <object class="pdf" 
+                        data=
+            "../project/media/coop_final_assignment02_answertemplate.pdf"
+            width="300"
+            height="400" alt="PDF of Syracuse Women's Rowing Database Assignment">
+            </object></div>
+        <div class="project"><h2>IST407 Final Project – NYC Car Crash Data Analysis</h2>
         <p>With a team of 5 peers, I worked on analyzing NYC car crash data to determine what whether conditions were likely to cause crashes within the city.</p>
         <a href="https://github.com/IST407-707/week-8-group-project-daniellakrav">Link to the project's GitHub Repository</a></div>
-    </div>
-    <div><h2>IST359 Final – Syracuse Women’s Rowing Database</h2>
-        <p>I designed a database for the Syracuse University Women’s rowing team to properly store athlete’s data and access information more efficiently.</p>
-        <object class="pdf" 
-                    data=
-        "../project/media/coop_final_assignment02_answertemplate.pdf"
-                    width="800"
-                    height="500" alt="PDF of Syracuse Women's Rowing Database Assignment">
-        </object></div>
-        <div><h2>Student-Athlete Advisory Committee Community Outreach Chair</h2>
+        
+        <div class="project"><h2>Student-Athlete Advisory Committee Community Outreach Chair</h2>
             <p>As chair I coordinated student-athlete participation in many community events within Syracuse, NY. My favorite event so far has been participating in Cuse Spot. I worked with a Professor at Syracuse to involve SAAC in Cuse Spot, which is a camp for local elementary school kids to participate in during their Feburary break. Student-Athletes were able to sign up for 2-hour shifts to teach students their sport, do art and do science experiments. This event was super impactful and was so important because it is held at a community center located in what once was Syracuse's 15th-ward, a historically black neighborhood that was destroyed and surrounding areas disadvantaged due to the construction of the major high-way 1-81.</p>
             </div>
+        
+            <div class="project"><h2>IST256 Final Project – Dinner Date Planner</h2>
+                <p>I wrote a unique dinner date planner. The interface allows the user to calculate their zodiac sign, compatibility with others and plan out the dinner and cocktails for a date. I thought this would be a fun and whimsical way to demonstrated what I learned in Python over the semester. </p>
+                <a href="https://github.com/lecoop/ist256/blob/main/README.md">Link to the project's GitHub Repository</a></div>
 </div>
 
-
-
-
 <footer>
-    <a href="mailto:lecoop@syr.edu">lecoop@syr.edu</a>
-    <a href="https://www.linkedin.com/in/lauren-coop/" target="_blank"><img src="../images/linkedin.png" alt="Small LinkedIn Logo"></a>
-    <a href="https://www.strava.com/athletes/90082491"><img src="">My Strava</a>
+    <h2>Let's Connect!</h2>
+    <div class="footer">
+        <div><a href="mailto:lecoop@syr.edu">lecoop@syr.edu</a></div>
+        <div><a href="https://www.linkedin.com/in/lauren-coop/" target="_blank"><img src="../images/linkedin.png" alt="Small LinkedIn Logo"></a></div>
+        <div><a href="https://www.strava.com/athletes/90082491">My Strava</a></div>
+    </div>
 </footer>
 </body>
 </html>

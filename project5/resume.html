@@ -6,14 +6,21 @@
     <title>Resume and Skills</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="../project/media/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <header>
         <div class="header">
             <div class="logo">
-                <img src="../project/media/logo_re.png">
+                <img src="../project/media/logo_re.png" alt="Green L and C">
             </div>
-            <div class="nav">
+            <div class="row">
+                <img id="hamicon" onclick="showNav();" src="../project/media/noun-hamburger-nav-683457.png" alt="hamburger icon">
+                <h2 onclick="hideNav();" id="close">X</h2>
+            </div>
+            <div id="navlinks">
                 <nav>
                     <a href="index_home.html">Home</a>
                     <a href="resume.html">Resume</a>
@@ -23,24 +30,20 @@
             </div>
         </div>
     </header>
-
-    <h1>Lauren Coop</h1>
-    <p>Vancouver, WA • (360) 975-1846 • lecoop@syr.edu • www.linkedin.com/in/lauren-coop</p>
-
-    <h2>PROFESIONAL SUMMARY</h2>
-    <p>Motivated and dependable student-athlete with a strong work ethic and extensive experience working in a team setting. Eager to apply my analytical and detail-oriented skillset to drive strategic decisions within dynamic business environments.</p>
-
+    <div class=button>
+    <a href="../project/media/Lauren_Coop_Resume.pdf" download class="download-button">Download Full Resume</a>
+</div>
+</div>
+<div class="resume">
     <h2>EDUCATION</h2>
     <p>Syracuse University | School of Information Studies | May 2025</p>
     <p>BS Applied Data Analytics | BA Policy Studies | GPA 3.96</p>						
     <p> Awards: Alston Award Scholarship | Atlantic Coast Conference Academic Honor Roll | Division I Athletic Scholarship</p>	          
-    <p>Relevant Coursework: Applied Machine Learning | Data in Society | Applied Data Science | Database Management | Information Reporting and Presentation | Methods of Policy Analysis and Presentation | Professional Writing | Front End Web Development</p>  
-        
 
     <h2>TECHNOLOGY SKILLS</h2>
     <p>Programming Languages: Python, R-Studio | Database Management: SQL | Software: MS Word, MS Excel, MS PowerPoint, Tableau, HTML</p>
 
-    <h2>WORK EXPERIENCE</h2>
+    <h2>PROFESSIONAL EXPERIENCE</h2>
     <h3>Research Fellow, Syracuse University Digital Work Group, Syracuse, NY</h3>
     <p>Aug 2022 – Present</p>
     <ul>
@@ -61,21 +64,6 @@
         <li>Mentored a team of 9 undergraduate students to succeed in the course.</li>
         <li>Analyzed course documents and student data to constantly update and improve course materials leading to an improvement in both efficiency and clarity for students and Tas.  </li>
     </ul>
-    <h2>PROJECTS</h2>
-    <h3>Data Analyst | Data Analysis and Reporting Writing & Presentation</h3>
-    <p>Nov 2023 – Dec 2023</p>
-    <ul>
-        <li>Analyzed New York City, NY Car Crash data from the past 10 years in Python. Personal responsibilities were data cleaning, merging the initial dataset with NYC weather data, and collaboration on the production of a predictive model and map.</li>
-        <li>Designed research proposal and project schedule including stakeholder analysis with a team of 5 peers.</li>
-        <li>Presented analysis and findings in the form of visualizations including graphs and maps to professor and peers. </li>
-    </ul>
-    <h3>Database Design | Syracuse Women’s Rowing Database</h3>
-    <p>Aug 2022 – Dec 2022</p>
-    <ul>
-        <li>Designed an SQL database to house the data of the Syracuse Women’s Rowing team to guarantee that coaching staff can efficiently access team statistics.</li>
-        <li>Utilized Microsoft Visio to transform data tables into easy-to-read diagrams and ensure that SQL formatting was precisely followed.</li>
-        <li>Developed a strong understanding of SQL skills and principles. </li>
-    </ul>
 
     <h2>LEADERSHIP EXPERIENCE</h2>
     <h3>Co-Chair of Community Outreach | Student-Athlete Advisory Committee, Syracuse University</h3>
@@ -85,11 +73,15 @@
         <li>Communicate with over 70 student-athletes to ensure that events are well attended and that diverse populations within the Syracuse Community are reached.</li>
         <li>Lead a team of 13 student-athletes by hosting bi-weekly meetings and continually update advisors on committee progress.</li>
     </ul>
+</div>
 
-    <footer>
-        <a href="mailto:lecoop@syr.edu">lecoop@syr.edu</a>
-        <a href="https://www.linkedin.com/in/lauren-coop/" target="_blank"><img src="../images/linkedin.png" alt="Small LinkedIn Logo"></a>
-        <a href="https://www.strava.com/athletes/90082491"><img src="">My Strava</a>
-    </footer>
+<footer>
+    <h2>Let's Connect!</h2>
+    <div class="footer">
+        <div><a href="mailto:lecoop@syr.edu">lecoop@syr.edu</a></div>
+        <div><a href="https://www.linkedin.com/in/lauren-coop/" target="_blank"><img src="../images/linkedin.png" alt="Small LinkedIn Logo"></a></div>
+        <div><a href="https://www.strava.com/athletes/90082491">My Strava</a></div>
+    </div>
+</footer>
 </body>
 </html>
