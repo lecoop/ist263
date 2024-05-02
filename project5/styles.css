@@ -161,3 +161,19 @@ justify-content: center;}
 @media only screen and (max-width: 800px) {
     .resume {margin:20px;
     margin-bottom: 50px;;}}
+
+.projects body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+.projects h2 {font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+.projects h1 {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
