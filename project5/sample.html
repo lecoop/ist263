@@ -38,7 +38,7 @@
 
 .mainrow {display: flex;
 margin: 20px;
-justify-content: space-around;}
+justify-content: space-between;}
     </style>
 </head>
 <body>
@@ -92,22 +92,27 @@ justify-content: space-around;}
 </body>
 <script>
     var acc = document.getElementsByClassName("accordion");
-var i;
+    var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        var panel = this.nextElementSibling;
+        
+        // Close all panels
+        for (var j = 0; j < acc.length; j++) {
+          var otherPanel = acc[j].nextElementSibling;
+          if (otherPanel !== panel) {
+            otherPanel.style.display = "none";
+            acc[j].classList.remove("active");
+          }
+        }
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+        // Toggle the panel associated with the clicked button
+        panel.style.display === "block" ? panel.style.display = "none" : panel.style.display = "block";
+        
+        // Toggle the active class for the clicked button
+        this.classList.toggle("active");
+      });
     }
-  });
-}
 </script>
 </html>
