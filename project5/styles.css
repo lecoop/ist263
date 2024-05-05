@@ -21,8 +21,6 @@ h1 {
     font-style: normal;
   }
 
-
-/*Making the page responsive for mobile*/
 @media only screen and (max-width: 800px) {
     .intro{flex-direction: column;
     align-items: center;
@@ -34,7 +32,6 @@ margin: 10px}}
 @media only screen and (max-width: 800px) {
     .rowlist, .rowlist2{flex-direction: column;}}
     
-/*header*/
 
 .header {display: flex;
     justify-content: space-between;
@@ -52,7 +49,7 @@ padding: 10px}
         #hamicon {display: block;}
         #close {display: block;}
         a {display: block;
-        border: 1px black;} /* change links to block that makes them take up full width*/
+        border: 1px black;} 
         #navlinks {display: none;}
         .row {display: flex; justify-content: space-between;}
         nav {background-color: #A0DB43}
@@ -80,9 +77,9 @@ footer nav a {
 
 .intro {
     display: flex;
-    gap: 100px; /* Space between items */
+    gap: 100px; 
     margin: 50px;
-    margin-bottom: 100px /* Whitespace around the edges */
+    margin-bottom: 100px 
 }
         
 
@@ -174,72 +171,7 @@ font-style: normal;
   }
 
 
-/* ahhh */
 
-
-.fix {
-    background-image: url(../project/media/oar_only.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;}
-
-.fix, html {
-height: 100%;
-margin: 0;
-padding: 0;
-}
-
-#background-container {
-position: relative;
-width: 100%;
-height: 100%;
-background-image: url(../project/media/oar_only.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-}
-
-#overlay {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-cursor: pointer;
-}
-
-#menu {
-display: none;
-position: absolute;
-top: 20px;
-left: 20px;
-background-color: white;
-padding: 10px;
-border-radius: 5px;
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-#menu ul {
-list-style-type: none;
-padding: 0;
-margin: 0;
-}
-
-#menu ul li {
-margin-bottom: 5px;
-}
-
-#menu ul li a {
-text-decoration: none;
-color: black;
-}
-
-#menu ul li a:hover {
-color: blue;
-}
-
-/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #eee;
     color: #ff4d01;
@@ -283,7 +215,6 @@ color: blue;
   }
 
   @media only screen and (max-width: 800px) {
-    /* Ensure flex-direction is column for intro and pictags */
     .mainrow {
         flex-direction: column;
         margin: 10px
