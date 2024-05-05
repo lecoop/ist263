@@ -1,7 +1,8 @@
 
 body {
 background-color: #fafafc;}
-h1 {color: #0c1663}
+h1 {color: #0c1663;
+margin: 20px}
 p {color: #0c1663}
 h2 {color: #0c1663}
 
@@ -269,12 +270,12 @@ color: blue;
       margin: 50px;
       margin-bottom: 100px;
       justify-content: space-between;
-      align-items: flex-start; /* Add this line to align items at the start */
+      align-items: center; /* Add this line to align items at the start */
   }
   
   /* Add some margin between the accordion and the image */
   .mainrow > div:nth-child(2) {
-      margin-left: 50px; /* Adjust the margin as needed */
+      margin: 50px; /* Adjust the margin as needed */
   }
 
   @media only screen and (max-width: 600px) {
