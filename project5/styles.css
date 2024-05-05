@@ -25,7 +25,9 @@ h1 {
 
 /*Making the page responsive for mobile*/
 @media only screen and (max-width: 800px) {
-    .intro{flex-direction: column;}}
+    .intro{flex-direction: column;
+    align-items: center;
+margin: 10px}}
 
 @media only screen and (max-width: 800px) {
     .pictags{flex-direction: column;}}
@@ -78,9 +80,10 @@ footer nav a {
 }
 
 .intro {display: flex;
-margin: 20px;}
+margin: 100px;
+justify-content: space-between;}
 .intro p, .intro h1 {flex: 1;
-    margin: 50px;}
+    margin: 20px;}
         
 
 
@@ -252,12 +255,12 @@ color: blue;
   
   }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
   .active, .accordion:hover {
     background-color: #ccc;
   }
   
-  /* Style the accordion panel. Note: hidden by default */
+
   .panel {
     padding: 0 18px;
     background-color: white;
@@ -270,12 +273,12 @@ color: blue;
       margin: 50px;
       margin-bottom: 100px;
       justify-content: space-between;
-      align-items: center; /* Add this line to align items at the start */
+      align-items: center; 
   }
   
-  /* Add some margin between the accordion and the image */
+
   .mainrow > div:nth-child(2) {
-      margin: 50px; /* Adjust the margin as needed */
+      margin: 50px; 
   }
 
   @media only screen and (max-width: 800px) {
@@ -303,10 +306,10 @@ color: blue;
     padding: 20px;
 }
 
-/* Added CSS for responsive images */
+
 .rowpic img {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
 }
 
 .skip {background-color: black;
@@ -316,7 +319,7 @@ color: blue;
     border: 2px solid black;
     position: absolute;
     top: 10px;
-    left: -999px; /*pus off ledt side of browser*/
+    left: -999px; 
     }
     .skip:focus {
         left: 10px;
@@ -331,4 +334,13 @@ color: blue;
 .mainrow img {
     max-width: 100%;
   height: auto;
+}
+
+.mainrow > div:nth-child(1) {
+    flex: 0 0 300px; 
+    margin: 20px; 
+}
+
+#close {
+    display: none; /* Hide close icon initially */
 }
