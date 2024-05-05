@@ -290,3 +290,15 @@ font-style: normal;
 .intro h1 {
     margin: 0; 
 }
+
+@media only screen and (max-width: 800px) {
+    .panel {
+        margin: 1px; /* Adjusted margin for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .mainrow {
+        margin: 0px; /* Adjusted margin for smaller screens */
+    }
+}
