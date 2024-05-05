@@ -38,7 +38,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     margin: 20px;
-padding: 20px}
+padding: 10px}
 
 .header nav a { margin: 20px}
 
@@ -81,16 +81,13 @@ margin: 20px;}
 .intro p, .intro h1 {flex: 1;
     margin: 50px;}
         
-.intro img {margin: 20px; flex: 2; }
+
 
 .pictags {display: flex;
         flex: 1;
     justify-content: space-evenly;}
     
 
-.rowlist, .rowlist2 {display: flex;
-margin: 20px;
-padding: 20px}
 
 .projects {
     display: grid;
@@ -323,5 +320,13 @@ color: blue;
         left: 10px;
     }
 
+.mainrow img {
+    max-width: 100%;
+  height: auto;
+}
 
     
+.mainrow img {
+    max-width: 100%;
+  height: auto;
+}
