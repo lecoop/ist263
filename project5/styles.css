@@ -1,4 +1,3 @@
-
 body {
 background-color: #fafafc;}
 h1 {color: #0c1663;
@@ -99,7 +98,7 @@ footer nav a {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
     margin: 20px;
-    margin-bottom: 75px;
+    margin-bottom: 100px;
 }
 
 
@@ -296,6 +295,7 @@ color: blue;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
     margin: 20px;
+    margin-bottom: 100px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -309,7 +309,7 @@ color: blue;
 }
 
 .rowpics h2 {
-    margin-left: 20px; /* Adjust the margin as needed */
+    margin-left: 20px; 
 }
 
 
@@ -357,5 +357,5 @@ color: blue;
 }
 
 .intro h1 {
-    margin: 0; /* Reset margin to zero */
+    margin: 0; 
 }
