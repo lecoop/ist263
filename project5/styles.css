@@ -1,7 +1,6 @@
 body {
 background-color: #fafafc;}
-h1 {color: #0c1663;
-margin: 20px}
+h1 {color: #0c1663;}
 p {color: #0c1663}
 h2 {color: #0c1663}
 
@@ -130,12 +129,12 @@ footer nav a {
     font-weight: 300;
     font-style: normal;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px;
     background-color: #000000;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    margin: 20px;
     }
     
 .download-button:hover {
@@ -301,4 +300,12 @@ font-style: normal;
     .mainrow {
         margin: 0px; /* Adjusted margin for smaller screens */
     }
+}
+
+.rowing_h1 {
+    margin-left: 30px
+}
+
+.xyz {
+    margin-left: 20px
 }
