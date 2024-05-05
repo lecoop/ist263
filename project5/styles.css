@@ -79,11 +79,12 @@ footer nav a {
     margin: 10px; 
 }
 
-.intro {display: flex;
-margin: 100px;
-justify-content: space-between;}
-.intro p, .intro h1 {flex: 1;
-    margin: 20px;}
+.intro {
+    display: flex;
+    gap: 100px; /* Space between items */
+    margin: 20px;
+    margin-bottom: 100px /* Whitespace around the edges */
+}
         
 
 
@@ -97,7 +98,8 @@ justify-content: space-between;}
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
-    margin: 20px
+    margin: 20px;
+    margin-bottom: 75px;
 }
 
 
@@ -306,6 +308,10 @@ color: blue;
     padding: 20px;
 }
 
+.rowpics h2 {
+    margin-left: 20px; /* Adjust the margin as needed */
+}
+
 
 .rowpic img {
     width: 100%;
@@ -342,5 +348,14 @@ color: blue;
 }
 
 #close {
-    display: none; /* Hide close icon initially */
+    display: none;
+}
+
+.mems {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.intro h1 {
+    margin: 0; /* Reset margin to zero */
 }
