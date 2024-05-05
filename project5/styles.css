@@ -81,7 +81,7 @@ footer nav a {
 .intro {
     display: flex;
     gap: 100px; /* Space between items */
-    margin: 20px;
+    margin: 50px;
     margin-bottom: 100px /* Whitespace around the edges */
 }
         
