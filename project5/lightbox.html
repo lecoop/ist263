@@ -8,247 +8,125 @@
     <link rel="shortcut icon" type="image/x-icon" href="../project/media/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lilita+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
     <style>
-.row > .column {
-  padding: 0 8px;
-}
+        /* Main styles */
+        /* Your existing CSS styles */
 
-.row{ display: flex;}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+        /* Add a class to hide lightbox elements on desktop */
+        .desktop-hide {
+            display: none;
+        }
 
-/* Create four equal columns that floats next to eachother */
-.column {
-  float: left;
-  width: 25%;
-}
+        /* Add a class to display flex on mobile */
+        .mobile {
+            display: none;
+        }
 
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
+        /* Media query for screens smaller than 600px (typical mobile devices) */
+        @media screen and (max-width: 600px) {
+            /* Hide lightbox on mobile */
+            .modal-content {
+                display: none;
+            }
 
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
+            /* Show mobile content */
+            .mobile {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
 
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
+            /* Ensure images take full width on mobile */
+            .mobile img {
+                width: 100%;
+            }
+        }
 
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
+        /* Media query for screens larger than 600px (typical desktop devices) */
+        @media screen and (min-width: 601px) {
+            /* Hide mobile content on desktop */
+            .mobile {
+                display: none;
+            }
 
-/* Hide the slides by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Caption text */
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: #ff4d01;
-}
-.modal .caption-container h2 {
-    color: #ff4d01
-}
-img.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+            /* Show lightbox on desktop */
+            .modal-content {
+                display: block;
+            }
+        }
     </style>
 </head>
 <body>
     <!-- Images used to open the lightbox -->
-<div class="row">
-    <div class="column">
-        <img src="../project/media/hocr_under_bridge.JPG" width="300px" height="200px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    <div class="row">
+        <div class="column">
+            <img src="../project/media/hocr_under_bridge.JPG" width="300px" height="200px" class="hover-shadow" onclick="openModal();currentSlide(1)">
+        </div>
+        <div class="column">
+            <img src="../project/media/row_lw_2706.jpg" width="300px" height="200px" class="hover-shadow" onclick="openModal();currentSlide(2)">
+        </div>
+        <div class="column">
+            <img src="../project/media/Jaylynn_Nash_LLC_05_13_23_sy1_35.jpg" width="300px" height="200px" class="hover-shadow" onclick="openModal();currentSlide(3)">
+        </div>
+        <div class="column">
+            <img src="../project/media/2v_podium.JPG" width="300px" height="200px" class="hover-shadow" onclick="openModal();currentSlide(4)">
+        </div>
     </div>
-    <div class="column">
-        <img src="../project/media/row_lw_2706.jpg" width="300px" height="200px" onclick="openModal();currentSlide(2)" class="hover-shadow">
-    </div>
-    <div class="column">
-        <img src="../project/media/Jaylynn_Nash_LLC_05_13_23_sy1_35.jpg" width="300px" height="200px" onclick="openModal();currentSlide(3)" class="hover-shadow">
-    </div>
-    <div class="column">
-        <img src="../project/media/2v_podium.JPG" width="300px" height="200px" onclick="openModal();currentSlide(4)" class="hover-shadow">
-    </div>
-  </div>
   
-  <!-- The Modal/Lightbox -->
-  <div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
-  
-      <div class="mySlides">
-        <div class="numbertext">1 / 4</div>
-        <img src="../project/media/hocr_under_bridge.JPG" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">2 / 4</div>
-        <img src="../project/media/row_lw_2706.jpg" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">3 / 4</div>
-        <img src="../project/media/Jaylynn_Nash_LLC_05_13_23_sy1_35.jpg" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">4 / 4</div>
-        <img src="../project/media/2v_podium.JPG" style="width:100%">
-      </div>
-  
-      <!-- Next/previous controls -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-      <!-- Caption text -->
-      <div class="caption-container">
-        <h2 id="caption"></h2>
-      </div>
-  
-      <!-- Thumbnail image controls -->
-      <div class="column">
-        <img class="demo" src="../project/media/hocr_under_bridge.JPG" width="400px" height="300px" onclick="currentSlide(1)" alt="Syracuse's 2V8+ rowing at the Head of the Charles Regatta, 2023 (Lauren Coop sitting in 3 seat)">
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="../project/media/hocr_under_bridge.JPG" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="../project/media/row_lw_2706.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="../project/media/Jaylynn_Nash_LLC_05_13_23_sy1_35.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="../project/media/2v_podium.JPG" style="width:100%">
+            </div>
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
     </div>
-    
-    <div class="column">
-        <img class="demo" src="../project/media/row_lw_2706.jpg" width="400px" height="300px" onclick="currentSlide(2)" alt="Lauren sitting bow seat of the 2v4+ at the Lake Wheeler Invitational, 2024">
-    </div>
-    
-    <div class="column">
-        <img class="demo" src="../project/media/Jaylynn_Nash_LLC_05_13_23_sy1_35.jpg" width="400px" height="300px" onclick="currentSlide(3)" alt="Lauren sitting bow seat of the 2v4+ at the ACC Championships, 2023">
-    </div>
-    
-    <div class="column">
-        <img class="demo" src="../project/media/2v_podium.JPG" width="400px" height="300px" onclick="currentSlide(4)" alt="2V8+ on the ACC Championship podium after placing 2nd, 2022">
-    </div>
-    </div>
-  </div>
-</body>
-<script>
-// Open the Modal
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
 
-// Close the Modal
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
+    <!-- Mobile content -->
+    <div class="mobile">
+        <div>
+            <img class="demo" src="../project/media/2v_podium.JPG" width="400px" height="300px" onclick="currentSlide(4)" alt="2V8+ on the ACC Championship podium after placing 2nd, 2022">
+            <p>2V8+ on the ACC Championship podium after placing 2nd, 2022</p>
+        </div>
+        <div>
+            <img class="demo" src="../project/media/2v_podium.JPG" width="400px" height="300px" onclick="currentSlide(4)" alt="2V8+ on the ACC Championship podium after placing 2nd, 2022">
+            <p>2V8+ on the ACC Championship podium after placing 2nd, 2022</p>
+        </div>
+        <div>
+            <img class="demo" src="../project/media/2v_podium.JPG" width="400px" height="300px" onclick="currentSlide(4)" alt="2V8+ on the ACC Championship podium after placing 2nd, 2022">
+            <p>2V8+ on the ACC Championship podium after placing 2nd, 2022</p>
+        </div>
+        <div>
+            <img class="demo" src="../project/media/2v_podium.JPG" width="400px" height="300px" onclick="currentSlide(4)" alt="2V8+ on the ACC Championship podium after placing 2nd, 2022">
+            <p>2V8+ on the ACC Championship podium after placing 2nd, 2022</p>
+        </div>
+    </div>
 
-var slideIndex = 1;
-showSlides(slideIndex);
+    <script>
+        // JavaScript to conditionally hide lightbox elements on mobile
+        window.onload
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
+
+
+
+
 </html>

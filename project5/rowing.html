@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rowing</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="../project/media/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lilita+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
-
+    <script src="script.js"></script>
+    <title>Rowing</title>
 </head>
-<body class="rowing">
+<body>
     <header>
         <div class="header">
             <div class="logo">
-            <a href="index_home.html"><img src="../project/media/logo_re.png" alt="Green L and C"></a>
+                <a href="index_home.html"><img src="../project/media/logo_re.png" alt="Green L and C"></a>
             </div>
             <div class="row">
                 <img id="hamicon" onclick="showNav();" src="../project/media/noun-hamburger-nav-683457.png" alt="hamburger icon">
@@ -23,6 +22,7 @@
             </div>
             <div id="navlinks">
                 <nav>
+                    <a href="#skip" class="skip">Skip to Content</a>
                     <a href="index_home.html">Home</a>
                     <a href="resume.html">Resume</a>
                     <a href="projects.html">Projects & Experiences</a>
@@ -31,24 +31,92 @@
             </div>
         </div>
     </header>
-    <main>
-    <h1>Top 5 Things Rowing Has Taught Me</h1>
+    <h1>Explore more about my life as a DI rower</h1>
+    <div class="mainrow">
+        <div>
+            <img src="../project/media/oar_only.JPG" class="bird" width="700px" height="500px">
+        </div>
+        <div>
+            <h2>Top 5 Things Rowing Has Taught Me</h2>
+            <button class="accordion"><h3>Success is not linear</h3></button>
+            <div class="panel">
+                <img src="../project/media/coop_medal_acc21.JPG" alt="Lauren Coop biting silver medal">
+                <p id="skip">In rowing, you really must learn how to not let one bad stroke become 10 bad strokes which becomes a bad practice which can then lead to a bad race and a bad season. If you keep going down catastrophic paths when you mess up, you have taken yourself out of the game before it has even begun. Because we do workouts and pieces so often, we as a team have had to learn that you aren’t always going to have your best performance because you can’t be perfect every single time you get onto the erg or the water. But to keep moving in the right direction, you need to continue to grow from little failures and remember that they are an important part of the process.</p>
+            </div>
+            
+            <button class="accordion"><h3>Attitude is Everything</h3></button>
+            <div class="panel">
+                <img src="../project/media/luke_speech_acc.JPG" alt="Coach McGee speaking to the team">
+                <p>This year, our team started working with a leadership coach. This coach has been super beneficial to us, and I’ve loved hearing his techniques and advice for how we can function together as a team. One of the most important things that he taught us was the famous quote used in sports: "Who's got it better than us?” which is something that coaches will say to remind their players to be grateful and enjoy the work we do. This is extremely pertinent to rowing and especially at Syracuse. When we are outside rowing in 30-degree weather and it's hailing and it's 6am and you had a paper to write last night, you can always say “who’s got it better than us?” instead of complaining and usually your teammates will laugh, and the boat’s morale will improve. I think this quote embodies how important it is to remember your why, and remember that you GET to do things, not just that you must do things.</p>
+            </div>
+            
+            <button class="accordion"><h3>Comparison is the Enemy</h3></button>
+            <div class="panel">
+                <img src="../project/media/ringlight.jpg" alt="Lauren Coop in Syracuse uniform">
+                <p>On a D1 rowing team, you are constantly being compared. This can be as big as when the weekly rankings of colleges come out or as small as how fast you were from one practice to the next. This comparison is difficult, especially as the ranking of rowing is extremely clear cut. Your top 8 athletes go in the varsity 8, then the next 8 are in the 2v… and so on. And these rankings are obvious, every single time we show up for practice to know what boat we are in, everyone’s name is written down for everyone to see. While this comparison can be difficult, learning how to deal with it has been invaluable to me. It is so hard to stop comparing yourself to others and most people still do but through rowing, I have worked on catching myself before the comparisons start to inhibit my ability to perform.</p>
+            </div>
 
-<div class="bird_eye">
-    <img src="../project/media/oar_only.JPG" class="bird" width="500px" height="400px"></img>
+            <button class="accordion"><h3>Drive and Grit</h3></button>
+            <div class="panel">
+                <img src="../project/media/cuse_4.jpg" alt="girls sitting in a 4+">
+                <p>Rowing is one of the hardest sports in terms of pushing yourself physically. You train for months and months all so that you can row 2000m as fast as possible and come out on top. On top of this long-term goal setting, in rowing you are attempting to achieve perfection on every single stroke. Rowing is not an inherently difficult movement, but most rowers spend years of their life searching to achieve the perfect stroke and never technically reach that goal. Having the focus to attempt to achieve this goal requires immense determination and tenacity. Rowing has taught me that to achieve a long-term goal, every single decision matters in reaching that goal, even if your race is months away.</p>
+            </div>
+        </div>
     </div>
+
+    <h2>Some of my favorite rowing memories from SU</h2>
+<div class="rowpics">
+    <div class="rowpic">
+        <img src="../project/media/hocr_under_bridge.JPG" width="400px" height="300px" alt="Syracuse's 2V8+ rowing under a bridge">
+        <p>Syracuse's 2V8+ rowing at the Head of the Charles Regatta, 2023 (Lauren Coop sitting in 3 seat)</p>
+    </div>
+    <div class="rowpic">
+        <img src="../project/media/row_lw_2706.jpg" width="400px" height="300px" alt="Lauren sitting bow seat of the 2v4+ at the Lake Wheeler Invitational, 2024">
+        <p>Lauren sitting bow seat of the 2v4+ at the Lake Wheeler Invitational, 2024</p>
+    </div>
+    <div class="rowpic">
+        <img class="demo" src="../project/media/Jaylynn_Nash_LLC_05_13_23_sy1_35.jpg" width="400px" height="300px" alt="Lauren sitting bow seat of the 2v4+ at the ACC Championships, 2023">
+        <p>Lauren sitting bow seat of the 2v4+ at the ACC Championships, 2023</p>
+    </div>
+    <div class="rowpic">
+        <img src="../project/media/2v_podium.JPG" width="400px" height="300px"  alt="2V8+ on the ACC Championship podium after placing 2nd, 2022">
+        <p>2V8+ on the ACC Championship podium after placing 2nd, 2022</p>
+    </div>
+</div>
+
+<script>var acc = document.getElementsByClassName("accordion");
+
+    for (var i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        var panel = this.nextElementSibling;
     
-    <h2>What Rowing has taught me</h2>
-
-</main>
-
-<footer>
-    <h2>Let's Connect!</h2>
-    <div class="footer">
-        <div><a href="mailto:lecoop@syr.edu">lecoop@syr.edu</a></div>
-        <div><a href="https://www.linkedin.com/in/lauren-coop/" target="_blank"><img src="../images/linkedin.png" alt="Small LinkedIn Logo"></a></div>
-        <div><a href="https://www.strava.com/athletes/90082491">My Strava</a></div>
-    </div>
-</footer>
+        // Close all panels except the one clicked
+        for (var j = 0; j < acc.length; j++) {
+          var otherPanel = acc[j].nextElementSibling;
+          if (otherPanel !== panel) {
+            otherPanel.style.display = "none";
+            acc[j].classList.remove("active");
+          }
+        }
+    
+        // Toggle the panel associated with the clicked button
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+    
+        // Toggle the active class for the clicked button
+        this.classList.toggle("active");
+      });
+    }</script>
+    <footer>
+        <h2>Let's Connect!</h2>
+        <div class="footer">
+            <div><a href="mailto:lecoop@syr.edu">lecoop@syr.edu</a></div>
+            <div><a href="https://www.linkedin.com/in/lauren-coop/" target="_blank"><img src="../images/linkedin.png" alt="Small LinkedIn Logo"></a></div>
+            <div><a href="https://www.strava.com/athletes/90082491">My Strava</a></div>
+        </div>
+    </footer>
 </body>
 </html>
